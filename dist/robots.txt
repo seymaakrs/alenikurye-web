@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://alenikurye.com/sitemap.xml
