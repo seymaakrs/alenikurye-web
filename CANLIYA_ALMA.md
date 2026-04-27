@@ -1,9 +1,29 @@
-# 🚀 Aleni Kurye — Canlıya Alma (Turhost Domain + Netlify)
+# 🚀 Aleni Kurye — Canlıya Alma (Turhost Domain + GitHub Pages)
 
 Domain: **alenikurye.com** (Turhost)
-Hosting: **Netlify** (ücretsiz, HTTPS otomatik)
+Hosting: **GitHub Pages** (ücretsiz, HTTPS otomatik, sınırsız trafik)
+
+> Not: Netlify ücretsiz limiti dolduğu için artık GitHub Pages kullanıyoruz.
+> `main` branch'e her push, `.github/workflows/deploy.yml` ile otomatik canlıya çıkar.
+> DNS ayarları için aşağıdaki "GitHub Pages DNS" bölümüne bak.
+
+## GitHub Pages DNS (Turhost paneli)
+
+Turhost DNS yönetiminde A kayıtları:
+```
+A  @  185.199.108.153
+A  @  185.199.109.153
+A  @  185.199.110.153
+A  @  185.199.111.153
+CNAME  www  seymaakrs.github.io
+```
+GitHub repo → Settings → Pages → Custom domain: `alenikurye.com` → "Enforce HTTPS" aç.
 
 ---
+
+## Eski Netlify rehberi (referans)
+
+
 
 ## ADIM 1 — Netlify Hesabı Aç (2 dakika)
 

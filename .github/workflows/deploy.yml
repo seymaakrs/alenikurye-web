@@ -3,6 +3,9 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [main]
+    paths-ignore:
+      - '**.md'
+      - '.gitignore'
   workflow_dispatch:
 
 permissions:
@@ -28,10 +31,16 @@ jobs:
         with:
           enablement: true
 
+      - name: Prepare public site
+        run: |
+          mkdir _site
+          cp index.html sitemap.xml robots.txt manifest.webmanifest favicon.svg CNAME .nojekyll netlify.toml _site/
+          cp -r fonts images _site/
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './dist'
+          path: './_site'
 
       - name: Deploy to GitHub Pages
         id: deployment
