@@ -34,8 +34,9 @@ jobs:
       - name: Prepare public site
         run: |
           mkdir _site
-          cp index.html sitemap.xml robots.txt manifest.webmanifest favicon.svg CNAME .nojekyll netlify.toml _site/
+          cp index.html sitemap.xml robots.txt manifest.webmanifest favicon.svg .nojekyll netlify.toml _site/
           cp -r fonts images _site/
+          [ -f CNAME ] && cp CNAME _site/ || true
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
