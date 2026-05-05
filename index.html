@@ -669,7 +669,7 @@ footer .copy{margin-top:14px;font-size:12px;color:var(--muted)}
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 3.5A10 10 0 003.5 17L2 22l5-1.5A10 10 0 1020 3.5zm-8 16.5a8.3 8.3 0 01-4.3-1.2l-.3-.2-3 .8.8-3-.2-.3A8.3 8.3 0 1112 20zm4.5-6.1c-.3-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.6.1s-.6.8-.8 1-.3.2-.6.1a6.8 6.8 0 01-3.4-3c-.3-.5.3-.5.8-1.5 0-.1 0-.3-.1-.4 0-.1-.6-1.4-.8-1.9s-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.3.3-1 1-1 2.4s1 2.8 1.2 3 2 3 4.8 4.2c1.7.7 2.3.8 3.2.6.5-.1 1.4-.6 1.6-1.2s.2-1.1.2-1.2c-.1-.1-.3-.2-.6-.3z"/></svg>
           WhatsApp'tan Yaz
         </a>
-        <a href="https://wa.me/905527161968?text=Merhaba%2C%20Sapanca%2FMa%C5%9Fukiye%20b%C3%B6lgesinde%20bungalov%20kiralamak%20istiyorum." target="_blank" rel="noopener" class="btn btn-cream">
+        <a href="https://wa.me/905369550054?text=Merhaba%2C%20Sapanca%2FMa%C5%9Fukiye%20b%C3%B6lgesinde%20bungalov%20kiralamak%20istiyorum." target="_blank" rel="noopener" class="btn btn-cream">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 10l9-7 9 7v10a2 2 0 01-2 2H5a2 2 0 01-2-2V10z"/><path d="M9 22V12h6v10"/></svg>
           Bungalov Kiralamak İçin
         </a>
@@ -996,7 +996,7 @@ footer .copy{margin-top:14px;font-size:12px;color:var(--muted)}
       <p class="section-kicker" style="color:var(--cream)">Konaklama Desteği</p>
       <h3>Sapanca'da <em>bungalov</em> arıyor musunuz?</h3>
       <p>Bölgedeki güvenilir bungalov ve villa sahipleriyle doğrudan çalışıyoruz. Uygun fiyatla, hızlı sonuç — size uygun seçeneği WhatsApp'tan hemen iletelim.</p>
-      <a href="https://wa.me/905527161968?text=Merhaba%2C%20Sapanca%2FMa%C5%9Fukiye%20b%C3%B6lgesinde%20bungalov%20kiralamak%20istiyorum." target="_blank" rel="noopener" class="btn btn-cream">
+      <a href="https://wa.me/905369550054?text=Merhaba%2C%20Sapanca%2FMa%C5%9Fukiye%20b%C3%B6lgesinde%20bungalov%20kiralamak%20istiyorum." target="_blank" rel="noopener" class="btn btn-cream">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 10l9-7 9 7v10a2 2 0 01-2 2H5a2 2 0 01-2-2V10z"/><path d="M9 22V12h6v10"/></svg>
         Bungalov Kiralamak İçin Yaz
       </a>
@@ -1172,7 +1172,7 @@ document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
       <svg viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm-1 6h2v6h-2zm0 8h2v2h-2z"/></svg>
     </div>
     <div class="ai-header-info">
-      <b>Acil Kurye Asistanı</b>
+      <b>Aleni Kurye Asistanı</b>
       <span><span class="ai-hd-online"></span>Çevrimiçi • Hemen yanıt verir</span>
     </div>
     <button class="ai-close" id="aiClose" aria-label="Kapat">✕</button>
@@ -1261,7 +1261,7 @@ document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
   async function startChat(){
     state = 'welcome'; oServices = []; oLocation = ''; oNotes = '';
     inp.disabled = true;
-    await botMsg('Merhaba! 👋 Ben <b>Acil Kurye</b> sipariş asistanıyım.', 300);
+    await botMsg('Merhaba! 👋 Ben <b>Aleni Kurye</b> sipariş asistanıyım.', 300);
     await typing(900);
     await botMsg('Sipariş vermek veya bilgi almak için buradayım. Ne yapmak istersiniz?');
     chips([
@@ -1336,7 +1336,7 @@ document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
     await typing(600);
     await botMsg('WhatsApp\'ta bir mesaj açacağım — sadece <b>Gönder</b> tuşuna basmanız yeterli 🚀');
     const noteLine = oNotes && oNotes.toLowerCase()!=='yok' ? `\nNot: ${oNotes}` : '';
-    const waText = `Merhaba Acil Kurye,\n\nSipariş vermek istiyorum:\n${oServices.map(s=>'• '+s).join('\n')}\n\nAdres: ${oLocation}${noteLine}\n\nTeşekkürler.`;
+    const waText = `Merhaba Aleni Kurye,\n\nSipariş vermek istiyorum:\n${oServices.map(s=>'• '+s).join('\n')}\n\nAdres: ${oLocation}${noteLine}\n\nTeşekkürler.`;
     const waBtnWrap = document.createElement('div');
     waBtnWrap.className = 'ai-msg bot';
     waBtnWrap.style.flexDirection = 'column';
@@ -1399,7 +1399,7 @@ document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
       chips([{ label:'📦 Sipariş ver', val:'order' },{ label:'💬 WhatsApp', val:'wa' }], (item, wrap) => {
         wrap.remove(); userMsg(item.label);
         if(item.val==='order') stepServices();
-        else window.open(`https://wa.me/${WA_NUM}?text=${encodeURIComponent('Merhaba Acil Kurye, ' + text)}`, '_blank');
+        else window.open(`https://wa.me/${WA_NUM}?text=${encodeURIComponent('Merhaba Aleni Kurye, ' + text)}`, '_blank');
       });
     }
   }
